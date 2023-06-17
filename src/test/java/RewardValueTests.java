@@ -22,7 +22,7 @@ public class RewardValueTests {
     void convert_from_cash_to_miles() {
         double cashValue = 200;
         double expectedMiles = cashValue / 0.0035;
-//        conversion from cash to miles
+//        to convert value from cash to miles
         RewardValue rewardValue = new RewardValue(cashValue);
         double actualMiles = rewardValue.getMilesValue();
 
@@ -33,7 +33,7 @@ public class RewardValueTests {
     void convert_from_miles_to_cash() {
         double milesValue = 5000;
         double expectedCash = milesValue * 0.0035;
-//        conversion from miles to cash
+//       to convert value from miles to cash
         RewardValue rewardValue = new RewardValue(expectedCash);
         double actualCash = rewardValue.getCashValue();
 
